@@ -7,4 +7,6 @@
 #define CORE_NAMESPACE_BEGIN namespace Core {
 #define CORE_NAMESPACE_END }
 
+#include "binarySearch.hpp"
+
 #endif // !ML_CORE_HPP

@@ -18,9 +18,15 @@
     <ClInclude Include="include\ml-core.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="include\binarySearch.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ml-core.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\binarySearch.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
