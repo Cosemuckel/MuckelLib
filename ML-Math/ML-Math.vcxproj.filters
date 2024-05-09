@@ -18,9 +18,15 @@
     <ClInclude Include="include\ml-math.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="include\vec2.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ml-math.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vec2.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

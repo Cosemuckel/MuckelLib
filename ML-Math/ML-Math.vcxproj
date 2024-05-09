@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -148,9 +148,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\ml-math.hpp" />
+    <ClInclude Include="include\vec2.hpp" />
+    <ClInclude Include="include\vec3.hpp" />
+    <ClInclude Include="include\vec4.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ml-math.cpp" />
+    <ClCompile Include="src\vec2.cpp" />
+    <ClCompile Include="src\vec3.cpp" />
+    <ClCompile Include="src\vec4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
