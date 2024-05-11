@@ -93,13 +93,13 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)ML-Core\include;$(SolutionDir)ML-Math\include;$(SolutionDir)ML-Graphics\include;$(SolutionDir)ML-GUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ML-Core\include;$(SolutionDir)ML-Math\include;$(SolutionDir)ML-Graphics\include;$(SolutionDir)ML-Graph\include;$(SolutionDir)ML-GUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)bin\$(Configuration)\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ml-math.lib;ml-core.lib;ml-graphics.lib;ml-gui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ml-math.lib;ml-core.lib;ml-graphics.lib;ml-gui.lib;ml-graph.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -111,7 +111,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)ML-Core\include;$(SolutionDir)ML-Math\include;$(SolutionDir)ML-Graphics\include;$(SolutionDir)ML-GUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ML-Core\include;$(SolutionDir)ML-Math\include;$(SolutionDir)ML-Graphics\include;$(SolutionDir)ML-Graph\include;$(SolutionDir)ML-GUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,7 +119,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)bin\$(Configuration)\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ml-math.lib;ml-core.lib;ml-graphics.lib;ml-gui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ml-math.lib;ml-core.lib;ml-graphics.lib;ml-gui.lib;ml-graph.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -129,13 +129,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)ML-Core\include;$(SolutionDir)ML-Math\include;$(SolutionDir)ML-Graphics\include;$(SolutionDir)ML-GUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ML-Core\include;$(SolutionDir)ML-Math\include;$(SolutionDir)ML-Graphics\include;$(SolutionDir)ML-Graph\include;$(SolutionDir)ML-GUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)bin\$(Configuration)\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ml-math.lib;ml-core.lib;ml-graphics.lib;ml-gui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ml-math.lib;ml-core.lib;ml-graphics.lib;ml-gui.lib;ml-graph.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -147,7 +147,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)ML-Core\include;$(SolutionDir)ML-Math\include;$(SolutionDir)ML-Graphics\include;$(SolutionDir)ML-GUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ML-Core\include;$(SolutionDir)ML-Math\include;$(SolutionDir)ML-Graphics\include;$(SolutionDir)ML-Graph\include;$(SolutionDir)ML-GUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -155,7 +155,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)bin\$(Configuration)\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ml-math.lib;ml-core.lib;ml-graphics.lib;ml-gui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ml-math.lib;ml-core.lib;ml-graphics.lib;ml-gui.lib;ml-graph.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
