@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ML-GUI", "ML-GUI\ML-GUI.vcx
 		{8ED095C3-CB5A-4AF3-9752-F88DA50B0676} = {8ED095C3-CB5A-4AF3-9752-F88DA50B0676}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ML-Graph", "ML-Graph\ML-Graph.vcxproj", "{89A457C5-8A7D-40DB-811C-9766AE7DB450}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -79,6 +81,14 @@ Global
 		{39114B99-0514-44C1-939D-E777A0243AA9}.Release|x64.Build.0 = Release|x64
 		{39114B99-0514-44C1-939D-E777A0243AA9}.Release|x86.ActiveCfg = Release|Win32
 		{39114B99-0514-44C1-939D-E777A0243AA9}.Release|x86.Build.0 = Release|Win32
+		{89A457C5-8A7D-40DB-811C-9766AE7DB450}.Debug|x64.ActiveCfg = Debug|x64
+		{89A457C5-8A7D-40DB-811C-9766AE7DB450}.Debug|x64.Build.0 = Debug|x64
+		{89A457C5-8A7D-40DB-811C-9766AE7DB450}.Debug|x86.ActiveCfg = Debug|Win32
+		{89A457C5-8A7D-40DB-811C-9766AE7DB450}.Debug|x86.Build.0 = Debug|Win32
+		{89A457C5-8A7D-40DB-811C-9766AE7DB450}.Release|x64.ActiveCfg = Release|x64
+		{89A457C5-8A7D-40DB-811C-9766AE7DB450}.Release|x64.Build.0 = Release|x64
+		{89A457C5-8A7D-40DB-811C-9766AE7DB450}.Release|x86.ActiveCfg = Release|Win32
+		{89A457C5-8A7D-40DB-811C-9766AE7DB450}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

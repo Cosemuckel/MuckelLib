@@ -1,6 +1,5 @@
 #include <cmath>
 
-#include "ml-core.hpp"
 #include "ml-math.hpp"
 
 ML_NAMESPACE_BEGIN
@@ -8,6 +7,7 @@ MATH_NAMESPACE_BEGIN
 
 void Parametric2D::updateLengthCache() {
 	lengthCache = 0.0f;
+	lengthCacheMap.clear();
 	Vec2 p0 = at(0.0f);
 	Vec2 p1;
 
@@ -40,20 +40,45 @@ Vec2 Parametric2D::normal(float t) const {
 	return tangent(t).rotated90();
 }
 Vec2 Parametric2D::atLength(float length) const {
-	const float t0 = 0.0f;
-	const float t1 = 1.0f;
-
-	const auto lengthFunction = [&](float t) {
-		return at(t).length() - length;
-	};
-
-	const float t = binarySearch.findRoot(lengthFunction, t0, t1, length / lengthCache); // initial guess based on the length
-
+	// Length goes from 0 to 1, so its percentage of lenght
+	float targetLength = length * lengthCache;
+	float currentLength = 0.0f;
+	float t = 0.0f;
+	Vec2 p0 = at(0.0f);
+	Vec2 p1;
+	for (int i = 1; i <= resolution; ++i) {
+		p1 = at(static_cast<float>(i) / resolution);
+		float segmentLength = (p1 - p0).length();
+		if (currentLength + segmentLength >= targetLength) {
+			t = static_cast<float>(i - 1) / resolution + (targetLength - currentLength) / segmentLength / resolution;
+			break;
+		}
+		currentLength += segmentLength;
+		p0 = p1;
+	}
 	return at(t);
 }
 
 float Parametric2D::length() const {
 	return lengthCache;
+}
+float Parametric2D::length(float t) {
+	auto it = lengthCacheMap.find(t);
+	if (it != lengthCacheMap.end()) {
+		return it->second;
+	}
+
+	float length = 0.0f;
+	Vec2 p0 = at(0.0f);
+	Vec2 p1;
+	for (int i = 0; i < resolution && length < t; ++i) {
+		p1 = at(static_cast<float>(i + 1) / resolution);
+		length += (p1 - p0).length();
+		p0 = p1;
+	}
+	length += (at(t) - p0).length();
+	lengthCacheMap[t] = length;
+	return length;
 }
 
 void Parametric2D::setResolution(int resolution) {

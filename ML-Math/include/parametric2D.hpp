@@ -1,6 +1,8 @@
 #ifndef PARAMETRIC2D_HPP
 #define PARAMETRIC2D_HPP
 
+#include <unordered_map>
+
 #include "ml-core.hpp"
 #include "ml-math.hpp"
 
@@ -17,6 +19,7 @@ protected:
 	float epsilon;
 
 	float lengthCache;
+	std::unordered_map<float, float> lengthCacheMap; // t -> length
 
 	virtual Vec2 atImpl(float t) const = 0;
 	virtual Vec2 tangentImpl(float t) const = 0;
@@ -33,6 +36,7 @@ public:
 	Vec2 atLength(float length) const;
 
 	float length() const;
+	float length(float t);
 
 	void setResolution(int resolution); // essentially the number of segments
 	void setIterations(int iterations); // for example, the number of iterations for the binary search in atLength
