@@ -156,6 +156,9 @@
     <ClInclude Include="include\ml-graph.hpp" />
     <ClInclude Include="include\node.hpp" />
     <ClInclude Include="include\path.hpp" />
+    <ClInclude Include="include\spacialEdge.hpp" />
+    <ClInclude Include="include\spacialGraph.hpp" />
+    <ClInclude Include="include\spacialNode.hpp" />
     <ClInclude Include="include\weightedEdge.hpp" />
     <ClInclude Include="include\weightedGraph.hpp" />
   </ItemGroup>
