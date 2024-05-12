@@ -12,6 +12,9 @@
 #include "graph.hpp"
 #include "weightedEdge.hpp"
 #include "weightedGraph.hpp"
+#include "spacialGraph.hpp"
+#include "spacialEdge.hpp"
+#include "spacialNode.hpp"
 
 
 #endif // !ML_GRAPH_HPP
